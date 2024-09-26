@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog page | Home</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#"
+        ><img
+          src="images/icon.png"
+          alt="icon"
+          style="height: 4.5vw; filter: grayscale(1)"
+      /></a>
+      <a href="#body1">Home</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/projects.html">Projects</a>
+      <a href="pages/awards.html">Awards</a>
+      <a href="pages/contact.html">Contact</a>
+      <a href="pages/credits.html">Credits</a>
+    </nav>
+    <script src="scripts/script.js"></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyBzzrxSlqUxrnuHBp2p7idEoQXYQj9Vr2c",
+        authDomain: "blog-template1.firebaseapp.com",
+        projectId: "blog-template1",
+        storageBucket: "blog-template1.appspot.com",
+        messagingSenderId: "399494287913",
+        appId: "1:399494287913:web:da3b369e8fd66e60070238",
+        measurementId: "G-LTVGFL27PF",
+      };
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
