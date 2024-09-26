@@ -91,3 +91,61 @@ nav > a:nth-child(n + 2):hover {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+.home1 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.organizer {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  column-gap: 10%;
+  width: 80%;
+}
+.organizer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.organizer > div:nth-child(1) {
+  text-align: left;
+  align-items: flex-start;
+}
+.organizer img {
+  height: 80%;
+}
+h1 {
+  font-family: "playfair display", serif;
+  font-weight: 600;
+  font-size: 4vw;
+  margin-bottom: 0;
+}
+h2 {
+  font-family: "playfair display", serif;
+  font-weight: 400;
+  font-size: 3vw;
+  margin: 0;
+}
+h3 {
+  font-family: "inter", sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
+}
+.button {
+  border: var(--accent) 1px solid;
+  font-weight: 300;
+  font-size: 1.5vw;
+  color: var(--accent);
+  padding: 1vw 2vw;
+  transition: all 0.25s ease-in-out;
+}
+.button:hover {
+  background-color: var(--accent);
+  color: var(--white);
+  transform: translateY(-0.3vh);
+  box-shadow: var(--black) 0 1vh 1vh;
+}
